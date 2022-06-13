@@ -1,12 +1,13 @@
 body{
 	font-family: 'Poppins', sans-serif;
+	background-color: #F3FAFF;
 }
 
 .navbar-collapse{
 	flex-grow:0;
 }
 .navbar{
-	background-color: #8457df;
+	background-color: #816E9D;
 }
 .nav-link{
 	color: white;
@@ -63,6 +64,7 @@ body{
 	font-size: large;
 	font-weight: 400;
 	border: 1px solid #8444df;
+	background-color: white;
 }
 
 .graduated-from{
@@ -100,6 +102,9 @@ body{
 .outlook, .mail{
 	width:48%;
 	text-align: center;
+	padding: 25px 0px;
+	border-radius: 25px;
+	border: 0.5px solid #ced4da;
 }
 .contact{
 	margin-top: 50px;
