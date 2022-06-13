@@ -30,8 +30,7 @@ body{
 }
 .about-section,
 .skills-section,
-.work-section,
-.contact-section{
+.work-section{
 	padding-bottom: 215px; 
 }
 .make-line{
@@ -96,8 +95,64 @@ body{
 	width: 100%;
 	justify-content: space-between;
 	display: flex;
+	margin-top: 20px;
 }
 .outlook, .mail{
 	width:48%;
 	text-align: center;
+}
+.contact{
+	margin-top: 50px;
+}
+.form{
+	padding-top: 10px;
+}
+.mb-3{
+	margin-top: 10px;
+}
+.fa-envelope {
+	color: #82c690;
+	background-color: #F3F9F4;
+	padding: 20px;
+	border-radius: 5px;
+	font-size: 1.7rem;
+}
+.fa-at{
+	color: #1267d0;
+	background-color: #E7EFFA;
+	padding: 20px;
+	border-radius: 5px;
+	font-size: 1.7rem;
+}
+.mail-link{
+	color: #333;
+}
+.mail-link, .mail-text{
+	justify-content: center;
+	margin-top: 10px;
+	text-decoration: none;
+}
+.mail-link:hover{
+	color: #8444df;
+}
+.mail-text{
+	font-size: 0.8rem;
+	color: #5F6F81;
+	letter-spacing: 1px;
+}
+.foot{
+	width: 100%;
+	justify-content: center;
+	margin-top: 100px;
+}
+.foot-text{
+	width: 20%;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	text-align: center;
+	color: #333;
+	margin: 0 auto;
+}
+.name-footer {
+	font-weight: 600;
 }

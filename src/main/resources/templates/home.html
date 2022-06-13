@@ -9,9 +9,11 @@
 	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
 	crossorigin="anonymous">
 </head>
-<script src="https://kit.fontawesome.com/f60f9d6702.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f60f9d6702.js"
+	crossorigin="anonymous"></script>
 <link rel="stylesheet" th:href="@{/styles/css/styles.css}">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
 <body>
 	<!-- Navbar Section -->
 	<div class="navbar-section">
@@ -123,55 +125,55 @@
 		</div>
 		<h1 class="topic">CONTACT</h1>
 		<div class="contact-info-border">
-			<div>
+			<div class="get-in-touch">
 				<h3>Get in Touch</h3>
 				<div class="in-touch">
-					<div class="outlook">Hi there.</div>
-					<div class="mail">Hi there.</div>
+					<div class="outlook">
+						<i class="fa-solid fa-envelope row"></i>
+						<a class="row mail-link" th:href="@{mailto:rkkamat2001@gmail.com}">rkkamat2001@gmail.com</a>
+						<p class="row mail-text">Mail on Outlook</p>
+					</div>
+					<div class="mail">
+						<i class="fa-solid fa-at row"></i>
+						<a class="row mail-link" th:href="@{mailto:rkkamat2001@gmail.com}">rkkamat2001@gmail.com</a>
+						<p class="row mail-text">Email me</p>
+					</div>
 				</div>
 			</div>
-			<div>
+			<div class="contact">
 				<h3>Contact Form</h3>
-				<form>
-						<div class="mb-3">
-							<input type="text"
-									class="form-control"
-									id="exampleInputText1"
-									placeholder="Your Name*"
-									required>
-						</div>
-						<div class="mb-3">
-							<input id="emailHelp"
-									type="email"
-									class="form-control"
-									placeholder="Your Email*"
-									required>
-						</div>
-						<div class="mb-3">
-							<input type="text"
-									class="form-control"
-									id="exampleInputText1"
-									placeholder="Subject*"
-									required>
-						</div>
-						<div class="mb-3">
-							<input type="text"
-									class="form-control"
-									id="exampleInputText1"
-									placeholder="Your Message*"
-									required>
-						</div>
-						<div class="sbmt-btn">
-							<button type="submit" class="submit-button">SEND</button>
-						</div>	
-						
-						<i class="fa-solid fa-hill-rockslide"></i>
-					</form>
+				<form class="form">
+					<div class="mb-3">
+						<input type="text" class="form-control" id="exampleInputText1"
+							placeholder="Your Name*" required>
+					</div>
+					<div class="mb-3">
+						<input id="emailHelp" type="email" class="form-control"
+							placeholder="Your Email*" required>
+					</div>
+					<div class="mb-3">
+						<input type="text" class="form-control" id="exampleInputText1"
+							placeholder="Subject*" required>
+					</div>
+					<div class="mb-3">
+						<input type="text" class="form-control" id="exampleInputText1"
+							placeholder="Your Message*" required>
+					</div>
+					<div class="sbmt-btn">
+						<button type="submit" class="submit-button">SEND</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
 
-	<script src="https://kit.fontawesome.com/f60f9d6702.js" crossorigin="anonymous"></script>
+<!-- Footer section -->
+	<footer class="foot">
+		<p class="foot-text">© <span class="name-footer">Rishi Kumar 2022</span></p>
+	</footer>
+
+	<script src="https://kit.fontawesome.com/f60f9d6702.js"
+		crossorigin="anonymous"></script>
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
