@@ -1,0 +1,94 @@
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+.navbar-collapse{
+	flex-grow:0;
+}
+.navbar{
+	background-color: #8457df;
+}
+.nav-link{
+	color: white;
+}
+.greeting {
+	letter-spacing: 1px;
+	font-size: 1rem;
+	line-height: 1.2;
+}
+
+.home-section{
+	padding: 215px 190px;
+}
+.myname{
+	font-size: 2.5rem;
+	letter-spacing: 2px;
+	margin: 24px 0;
+}
+.highlight{
+	color: #8444df;
+}
+.about-section,
+.skills-section,
+.work-section,
+.contact-section{
+	padding-bottom: 215px; 
+}
+.make-line{
+	height: 1px;
+	background-color: #333;
+	width: 4%;
+	align-self: center;
+}
+.some-info {
+	width: 96%;
+	font-size: 10px;
+	letter-spacing: 1px;
+	padding: 0 15px;
+}
+.topic{
+	font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    padding-top: 10px;
+}
+.about-info,
+.skill-info-border,
+.work-info-border,
+.contact-info-border {
+	line-height: 1.5;
+	letter-spacing: 1px;
+	margin-top: 60px;
+	padding: 55px 60px;
+	border-radius: 30px;
+	font-size: large;
+	font-weight: 400;
+	border: 1px solid #8444df;
+}
+
+.graduated-from{
+	color: #8444df;
+}
+
+.form-control{
+	padding-top: 10px;
+}
+.sbmt-btn{
+	width:100%;
+	text-align: center;
+	margin-top: 35px;
+}
+.submit-button{
+	border-radius:35px;
+	border: 1px solid #8444df;
+	padding: 10px ;
+	background-color: white;
+	font-size: 0.9rem;
+	letter-spacing: 1px;
+	width: 12%;
+	transition: all 0.3s ease-in;
+}
+.submit-button:hover{
+	background-color: #8444df;
+	color: white;
+}
