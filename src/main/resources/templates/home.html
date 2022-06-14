@@ -3,11 +3,11 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-	crossorigin="anonymous">
+	<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+		rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+		crossorigin="anonymous">
 </head>
 <script src="https://kit.fontawesome.com/f60f9d6702.js"
 	crossorigin="anonymous"></script>
@@ -15,9 +15,10 @@
 <link rel="stylesheet"
 	href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
 <body>
+
 	<!-- Navbar Section -->
 	<div class="navbar-section">
-		<nav class="navbar navbar-expand-lg">
+		<nav class="navbar navbar-expand-lg shadow">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">ℜ𝔦𝔰𝔥𝔦 𝔎𝔲𝔪𝔞𝔯</a>
 				<button class="navbar-toggler" type="button"
@@ -30,29 +31,24 @@
 					id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item"><a class="nav-link active"
-							aria-current="page" href="#">Home</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">About</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Work</a></li>
-						<li class="nav-item"><a class="nav-link" th:href="@{#contactId}">Contact</a></li>
-						<!-- <li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-						role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Dropdown </a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item" href="#">Action</a></li>
-							<li><a class="dropdown-item" href="#">Another action</a></li>
-							<li><hr class="dropdown-divider"></li>
-							<li><a class="dropdown-item" href="#">Something else
-									here</a></li>
-						</ul></li> -->
-						<li class="nav-item"><a class="nav-link disabled">Disabled</a>
+							aria-current="page" th:href="@{/home}">Home</a></li>
+						<li class="nav-item"><a class="nav-link" th:href="@{/allsheets}">Sheets</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+								role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Questions
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#">Solved</a></li>
+								<li><a class="dropdown-item" href="#">Unsolved</a></li>
+								<li><hr class="dropdown-divider"><a class="dropdown-item" href="#">All Questions</a></li>
+							</ul>
 						</li>
 					</ul>
 					<form class="d-flex" role="search">
 						<input class="form-control me-2" type="search"
 							placeholder="Search" aria-label="Search">
-						<button class="btn btn-outline-light" type="submit">Search</button>
+						<button class="btn btn-border" type="submit">Search</button>
 					</form>
 				</div>
 			</div>
@@ -65,12 +61,7 @@
 			<a class="float-icon shadow" th:href="@{#aboutId}"><i class="fa-solid fa-address-card font-icon"></i></a>
 			<a class="float-icon shadow" th:href="@{#skillId}"><i class="fa-solid fa-code font-icon"></i></a>
 			<a class="float-icon shadow" th:href="@{#workId}"><i class="fa-solid fa-briefcase font-icon"></i></a>
-			<a class="float-icon shadow" th:href="@{#contactId}"><i class="fa-brands fa-telegram font-icon"></i></a>
-			<!-- <div class="float-link shadow"><a class="float-icon" th:href="@{#homeId}"><i class="fa-solid fa-user"></i></a></div>
-			<div class="float-link shadow"><a class="float-icon" th:href="@{#aboutId}"><i class="fa-solid fa-address-card"></i></a></div>
-			<div class="float-link shadow"><a class="float-icon" th:href="@{#skillId}"><i class="fa-solid fa-code"></i></a></div>
-			<div class="float-link shadow"><a class="float-icon" th:href="@{#workId}"><i class="fa-solid fa-briefcase"></i></a></div>
-			<div class="float-link shadow"><a class="float-icon" th:href="@{#contactId}"><i class="fa-brands fa-telegram"></i></a></div> -->
+			<a class="float-icon shadow" th:href="@{#contactId}"><i class="fa-solid fa-tty font-icon"></i></i></a>
 		</div>
 		<div class="second-div">
 			<!-- Home Section -->
@@ -98,7 +89,7 @@
 				</div>
 
 				<h1 class="topic">ABOUT ME</h1>
-				<div class="about-info-border">
+				<div class="about-info-border shadow">
 					<p class="about-info">
 						I'm a Back-end Java developer with a background in Software
 						Development. My years of IT experience has given me a strong
@@ -118,7 +109,7 @@
 					<div class="some-info">CHECK OUT MY</div>
 				</div>
 				<h1 class="topic">SKILLS</h1>
-				<div class="skill-info-border"></div>
+				<div class="skill-info-border shadow"></div>
 			</div>
 
 			<!-- Work Section -->
@@ -128,7 +119,7 @@
 					<div class="some-info">TAKE A LOOK AT MY</div>
 				</div>
 				<h1 class="topic">WORK</h1>
-				<div class="work-info-border"></div>
+				<div class="work-info-border shadow"></div>
 			</div>
 
 			<!-- Contact Section -->
@@ -138,7 +129,7 @@
 					<div class="some-info">SAY HELLO</div>
 				</div>
 				<h1 class="topic">CONTACT</h1>
-				<div class="contact-info-border">
+				<div class="contact-info-border shadow">
 					<div class="get-in-touch">
 						<h3>Get in Touch</h3>
 						<div class="in-touch ">

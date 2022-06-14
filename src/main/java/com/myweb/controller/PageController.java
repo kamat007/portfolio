@@ -10,4 +10,9 @@ public class PageController {
 	public String index() {
 		return "home";
 	}
+	
+	@GetMapping("/allsheets")
+	public String sheet() {
+		return "sheets";
+	}
 }
