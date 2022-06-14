@@ -34,7 +34,7 @@
 						<li class="nav-item"><a class="nav-link" href="#">About</a></li>
 						<li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
 						<li class="nav-item"><a class="nav-link" href="#">Work</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+						<li class="nav-item"><a class="nav-link" th:href="@{#contactId}">Contact</a></li>
 						<!-- <li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 						role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -59,117 +59,135 @@
 		</nav>
 	</div>
 
-	<!-- Home Section -->
-	<header class="home-section container">
-		<div class="row">
-			<div class="col">Image here</div>
-			<div class="col">
-				<p class="greeting">HI THERE! I'M</p>
-				<h1 class="myname">
-					<span class="highlight">RISHI </span> KUMAR
-				</h1>
-				<p class="smallbio">
-					A <span class="highlight"> Back-End Java Developer </span>
-					passionate about creating interactive applications.
-				</p>
-			</div>
+	<div class="second-container">
+		<div class="first-div">
+			<a class="float-icon shadow" th:href="@{#homeId}"><i class="fa-solid fa-user font-icon"></i></a>
+			<a class="float-icon shadow" th:href="@{#aboutId}"><i class="fa-solid fa-address-card font-icon"></i></a>
+			<a class="float-icon shadow" th:href="@{#skillId}"><i class="fa-solid fa-code font-icon"></i></a>
+			<a class="float-icon shadow" th:href="@{#workId}"><i class="fa-solid fa-briefcase font-icon"></i></a>
+			<a class="float-icon shadow" th:href="@{#contactId}"><i class="fa-brands fa-telegram font-icon"></i></a>
+			<!-- <div class="float-link shadow"><a class="float-icon" th:href="@{#homeId}"><i class="fa-solid fa-user"></i></a></div>
+			<div class="float-link shadow"><a class="float-icon" th:href="@{#aboutId}"><i class="fa-solid fa-address-card"></i></a></div>
+			<div class="float-link shadow"><a class="float-icon" th:href="@{#skillId}"><i class="fa-solid fa-code"></i></a></div>
+			<div class="float-link shadow"><a class="float-icon" th:href="@{#workId}"><i class="fa-solid fa-briefcase"></i></a></div>
+			<div class="float-link shadow"><a class="float-icon" th:href="@{#contactId}"><i class="fa-brands fa-telegram"></i></a></div> -->
 		</div>
-	</header>
-
-	<!-- About Section -->
-	<div class="about-section container">
-		<div class="row align-line">
-			<div class="make-line"></div>
-			<div class="some-info">SOME INFO</div>
-		</div>
-
-		<h1 class="topic">ABOUT ME</h1>
-		<div class="about-info-border">
-			<p class="about-info">
-				I'm a Back-end Java developer with a background in Software
-				Development. My years of IT experience has given me a strong
-				foundation for development and building complex solutions. I
-				graduated from the <span class="graduated-from">ABES
-					Institute of Technology</span>. I am passionate about coding and solving
-				problems through code, and I am excited to work alongside other
-				amazing programmers and learn so much more!
-			</p>
-		</div>
-	</div>
-
-	<!-- Skills Section -->
-	<div class="skills-section container">
-		<div class="row align-line">
-			<div class="make-line"></div>
-			<div class="some-info">CHECK OUT MY</div>
-		</div>
-		<h1 class="topic">SKILLS</h1>
-		<div class="skill-info-border"></div>
-	</div>
-
-	<!-- Work Section -->
-	<div class="work-section container">
-		<div class="row align-line">
-			<div class="make-line"></div>
-			<div class="some-info">TAKE A LOOK AT MY</div>
-		</div>
-		<h1 class="topic">WORK</h1>
-		<div class="work-info-border"></div>
-	</div>
-
-	<!-- Contact Section -->
-	<div class="contact-section container">
-		<div class="row align-line">
-			<div class="make-line"></div>
-			<div class="some-info">SAY HELLO</div>
-		</div>
-		<h1 class="topic">CONTACT</h1>
-		<div class="contact-info-border">
-			<div class="get-in-touch">
-				<h3>Get in Touch</h3>
-				<div class="in-touch ">
-					<div class="outlook shadow">
-						<i class="fa-solid fa-envelope row"></i>
-						<a class="row mail-link" th:href="@{mailto:rkkamat2001@gmail.com}">rkkamat2001@gmail.com</a>
-						<p class="row mail-text">Mail on Outlook</p>
+		<div class="second-div">
+			<!-- Home Section -->
+			<header class="home-section container" id="homeId">
+				<div class="row">
+					<div class="col">Image here</div>
+					<div class="col">
+						<p class="greeting">HI THERE! I'M</p>
+						<h1 class="myname">
+							<span class="highlight">RISHI </span> KUMAR
+						</h1>
+						<p class="smallbio">
+							A <span class="highlight"> Back-End Java Developer </span>
+							passionate about creating interactive applications.
+						</p>
 					</div>
-					<div class="mail shadow">
-						<i class="fa-solid fa-at row"></i>
-						<a class="row mail-link" th:href="@{mailto:rkkamat2001@gmail.com}">rkkamat2001@gmail.com</a>
-						<p class="row mail-text">Email me</p>
+				</div>
+			</header>
+
+			<!-- About Section -->
+			<div class="about-section container" id="aboutId">
+				<div class="row align-line">
+					<div class="make-line"></div>
+					<div class="some-info">SOME INFO</div>
+				</div>
+
+				<h1 class="topic">ABOUT ME</h1>
+				<div class="about-info-border">
+					<p class="about-info">
+						I'm a Back-end Java developer with a background in Software
+						Development. My years of IT experience has given me a strong
+						foundation for development and building complex solutions. I
+						graduated from the <span class="graduated-from">ABES
+							Institute of Technology</span>. I am passionate about coding and solving
+						problems through code, and I am excited to work alongside other
+						amazing programmers and learn so much more!
+					</p>
+				</div>
+			</div>
+
+			<!-- Skills Section -->
+			<div class="skills-section container" id="skillId">
+				<div class="row align-line">
+					<div class="make-line"></div>
+					<div class="some-info">CHECK OUT MY</div>
+				</div>
+				<h1 class="topic">SKILLS</h1>
+				<div class="skill-info-border"></div>
+			</div>
+
+			<!-- Work Section -->
+			<div class="work-section container" id="workId">
+				<div class="row align-line">
+					<div class="make-line"></div>
+					<div class="some-info">TAKE A LOOK AT MY</div>
+				</div>
+				<h1 class="topic">WORK</h1>
+				<div class="work-info-border"></div>
+			</div>
+
+			<!-- Contact Section -->
+			<div class="contact-section container" id="contactId">
+				<div class="row align-line">
+					<div class="make-line"></div>
+					<div class="some-info">SAY HELLO</div>
+				</div>
+				<h1 class="topic">CONTACT</h1>
+				<div class="contact-info-border">
+					<div class="get-in-touch">
+						<h3>Get in Touch</h3>
+						<div class="in-touch ">
+							<div class="outlook shadow">
+								<i class="fa-solid fa-envelope row"></i> <a
+									class="row mail-link" th:href="@{mailto:rkkamat2001@gmail.com}">rkkamat2001@gmail.com</a>
+								<p class="row mail-text">Mail on Outlook</p>
+							</div>
+							<div class="mail shadow">
+								<i class="fa-solid fa-at row"></i> <a class="row mail-link"
+									th:href="@{mailto:rkkamat2001@gmail.com}">rkkamat2001@gmail.com</a>
+								<p class="row mail-text">Email me</p>
+							</div>
+						</div>
+					</div>
+					<div class="contact">
+						<h3>Contact Form</h3>
+						<form class="form">
+							<div class="mb-3">
+								<input type="text" class="form-control" id="exampleInputText1"
+									placeholder="Your Name*" required>
+							</div>
+							<div class="mb-3">
+								<input id="emailHelp" type="email" class="form-control"
+									placeholder="Your Email*" required>
+							</div>
+							<div class="mb-3">
+								<input type="text" class="form-control" id="exampleInputText1"
+									placeholder="Subject*" required>
+							</div>
+							<div class="mb-3">
+								<input type="text" class="form-control" id="exampleInputText1"
+									placeholder="Your Message*" required>
+							</div>
+							<div class="sbmt-btn">
+								<button type="submit" class="submit-button">POST</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
-			<div class="contact">
-				<h3>Contact Form</h3>
-				<form class="form">
-					<div class="mb-3">
-						<input type="text" class="form-control" id="exampleInputText1"
-							placeholder="Your Name*" required>
-					</div>
-					<div class="mb-3">
-						<input id="emailHelp" type="email" class="form-control"
-							placeholder="Your Email*" required>
-					</div>
-					<div class="mb-3">
-						<input type="text" class="form-control" id="exampleInputText1"
-							placeholder="Subject*" required>
-					</div>
-					<div class="mb-3">
-						<input type="text" class="form-control" id="exampleInputText1"
-							placeholder="Your Message*" required>
-					</div>
-					<div class="sbmt-btn">
-						<button type="submit" class="submit-button">POST</button>
-					</div>
-				</form>
-			</div>
 		</div>
 	</div>
 
-<!-- Footer section -->
+	<!-- Footer section -->
 	<footer class="foot">
-		<p class="foot-text">© <span class="name-footer">Rishi Kumar 2022</span></p>
+		<p class="foot-text">
+			© <span class="name-footer">Rishi Kumar 2022</span>
+		</p>
 	</footer>
 
 	<script src="https://kit.fontawesome.com/f60f9d6702.js"
