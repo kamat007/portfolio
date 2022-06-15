@@ -3,6 +3,11 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+	crossorigin="anonymous">
 </head>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -41,8 +46,7 @@
 								<li><a class="dropdown-item" th:href="@{/solved}">Solved</a></li>
 								<li><a class="dropdown-item" th:href="@{/unsolved}">Unsolved</a></li>
 								<li><hr class="dropdown-divider"> <a
-									class="dropdown-item" th:href="@{/questions}">All
-										Questions</a></li>
+									class="dropdown-item" th:href="@{/questions}">All Questions</a></li>
 							</ul></li>
 					</ul>
 					<form class="d-flex" role="search">
@@ -55,22 +59,52 @@
 		</nav>
 	</div>
 
-	<!-- <div class="ques-container">
-		<form th:action="@{/allquestions}" th:object="${newquestion}" method="POST">
+	<div class="ques-container" id="addques">
+		<form th:action="@{/questions}" method="POST">
 			<div class="form-group">
-				<label>Student First Name</label>
-				<input type="text" name="question" th:field="*{question}"
-					placeholder="Enter Question" class="form-control" />
+				<label>Question</label>
+				<textarea class="form-control" aria-label="With textarea"></textarea>
+			</div>
+
+			<div class="form-group">
+				<label>Answer</label>
+				<textarea class="form-control" aria-label="With textarea"></textarea>
+			</div>
+
+			<div class="dropdown drp-style">
+				<button class="btn dropdown-toggle drpdn" type="button"
+					id="dropdownMenuButton1" data-bs-toggle="dropdown"
+					aria-expanded="false">Topic</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+					<li><a class="dropdown-item" href="#">Action</a></li>
+					<li><a class="dropdown-item" href="#">Another action</a></li>
+					<li><a class="dropdown-item" href="#">Something else here</a></li>
+					<li><a class="dropdown-item" href="#">Action</a></li>
+					<li><a class="dropdown-item" href="#">Another action</a></li>
+					<li><a class="dropdown-item" href="#">Something else here</a></li>
+					<li><a class="dropdown-item" href="#">Action</a></li>
+					<li><a class="dropdown-item" href="#">Another action</a></li>
+					<li><a class="dropdown-item" href="#">Something else here</a></li>
+					<li><a class="dropdown-item" href="#">Action</a></li>
+					<li><a class="dropdown-item" href="#">Another action</a></li>
+					<li><a class="dropdown-item" href="#">Something else here</a></li>
+					<li><a class="dropdown-item" href="#">Action</a></li>
+					<li><a class="dropdown-item" href="#">Another action</a></li>
+					<li><a class="dropdown-item" href="#">Something else here</a></li>
+					<li><a class="dropdown-item" href="#">Action</a></li>
+					<li><a class="dropdown-item" href="#">Another action</a></li>
+					<li><a class="dropdown-item" href="#">Something else here</a></li>
+				</ul>
 			</div>
 
 			<div class="box-footer">
 				<button type="submit" class="btn btn-primary">Submit</button>
 			</div>
 		</form>
-	</div> -->
+	</div>
 
 	<div class="add-button">
-		<a class="add-btn-link" th:href="@{/questions/add}">
+		<a class="add-btn-link" th:href="@{#addques}">
 			<button type="button" class="btn btn-circle btn-xl shadow">
 				<i class="fa-solid fa-plus"></i>
 			</button>
