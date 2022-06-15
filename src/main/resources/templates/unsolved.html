@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.com">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+		rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+		crossorigin="anonymous">
+</head>
+<script src="https://kit.fontawesome.com/f60f9d6702.js"
+	crossorigin="anonymous"></script>
+<link rel="stylesheet" th:href="@{/styles/css/styles.css}">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+<body>
+	<!-- Navbar Section -->
+	<div class="navbar-section">
+		<nav class="navbar navbar-expand-lg shadow">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">ℜ𝔦𝔰𝔥𝔦 𝔎𝔲𝔪𝔞𝔯</a>
+				<button class="navbar-toggler" type="button"
+					data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse remove-flex-grow"
+					id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link active"
+							aria-current="page" th:href="@{/home}">Home</a></li>
+						<li class="nav-item"><a class="nav-link"
+							th:href="@{/allsheets}">Sheets</a></li>
+						<li class="nav-item dropdown"><a
+							class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+							role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Questions </a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" th:href="@{/solved}">Solved</a></li>
+								<li><a class="dropdown-item" th:href="@{/unsolved}">Unsolved</a></li>
+								<li><hr class="dropdown-divider">
+									<a class="dropdown-item" th:href="@{/questions}">All
+										Questions</a></li>
+							</ul></li>
+					</ul>
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search"
+							placeholder="Search" aria-label="Search">
+						<button class="btn btn-border" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</div>
+	
+	
+	<!-- Footer section -->
+	<!-- <footer class="foot">
+		<p class="foot-text">
+			© <span class="name-footer">Rishi Kumar 2022</span>
+		</p>
+	</footer> -->
+
+	<script src="https://kit.fontawesome.com/f60f9d6702.js"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+</body>
+</html>

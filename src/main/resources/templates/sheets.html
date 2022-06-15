@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="https://www.thymeleaf.com">
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
@@ -38,10 +38,10 @@
 							role="button" data-bs-toggle="dropdown" aria-expanded="false">
 								Questions </a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#">Solved</a></li>
-								<li><a class="dropdown-item" href="#">Unsolved</a></li>
+								<li><a class="dropdown-item" th:href="@{/solved}">Solved</a></li>
+								<li><a class="dropdown-item" th:href="@{/unsolved}">Unsolved</a></li>
 								<li><hr class="dropdown-divider">
-									<a class="dropdown-item" href="#">All Questions</a></li>
+									<a class="dropdown-item" th:href="@{/questions}">All Questions</a></li>
 							</ul></li>
 					</ul>
 					<form class="d-flex" role="search">
@@ -68,8 +68,8 @@
 					<p class="sheetPoints"><i class="fa-solid fa-angles-right"></i>Clearing the DSA round for the Interviews, as these are the questions generally asked in the <span class="color-it">companies like Amazon, Microsoft, Google</span>, etc.</p>
 				</div>
 				<div class="two-btn">
-					<button class="btn btn-border">VIEW</button>
-					<button class="btn btn-border move"><a class="file" th:href="@{/files/FINAL450.xlsx}" download="dsa">DOWNLOAD</a></button>
+					<a th:href="@{/files/FINAL450.xlsx}"><button class="btn btn-border">VIEW</button></a>
+					<a class="file" th:href="@{/files/FINAL450.xlsx}"><button class="btn btn-border move">DOWNLOAD</button></a>
 				</div>
 			</div>
 		</div>
@@ -89,8 +89,8 @@
 					<p class="sheetPoints"><i class="fa-solid fa-angles-right"></i>Clearing the DSA round for the Interviews, as these are the questions generally asked in the <span class="color-it">companies like Amazon, Microsoft, Google</span>, etc.</p>
 				</div>
 				<div class="two-btn">
-					<button class="btn btn-border">VIEW</button>
-					<button class="btn btn-border move"><a class="file" th:href="@{/files/FINAL450.xlsx}" download="dsa">DOWNLOAD</a></button>
+					<a th:href="@{/files/FINAL450.xlsx}"><button class="btn btn-border">VIEW</button></a>
+					<a class="file" th:href="@{/files/FINAL450.xlsx}"><button class="btn btn-border move">DOWNLOAD</button></a>
 				</div>
 			</div>
 		</div>
@@ -110,8 +110,8 @@
 					<p class="sheetPoints"><i class="fa-solid fa-angles-right"></i>Clearing the DSA round for the Interviews, as these are the questions generally asked in the <span class="color-it">companies like Amazon, Microsoft, Google</span>, etc.</p>
 				</div>
 				<div class="two-btn">
-					<button class="btn btn-border">VIEW</button>
-					<button class="btn btn-border move"><a class="file" th:href="@{/files/FINAL450.xlsx}" download="dsa">DOWNLOAD</a></button>
+					<a th:href="@{/files/FINAL450.xlsx}"><button class="btn btn-border">VIEW</button></a>
+					<a class="file" th:href="@{/files/FINAL450.xlsx}"><button class="btn btn-border move">DOWNLOAD</button></a>
 				</div>
 			</div>
 		</div>

@@ -15,4 +15,16 @@ public class PageController {
 	public String sheet() {
 		return "sheets";
 	}
+	
+	@GetMapping("/solved")
+	public String solved() {
+		return "solved";
+	}
+	
+	@GetMapping("/unsolved")
+	public String unSolved() {
+		return "unsolved";
+	}
+	
+	
 }
