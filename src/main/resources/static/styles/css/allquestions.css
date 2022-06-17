@@ -64,21 +64,3 @@ body{
 
 
 /*  dropdown  */
-.drp-style{
-	width: 50% !important;
-	margin: 20px auto;
-}
-
-.drpdn{
-	width: 100%;
-	background-color: white;
-	color: #8444df;
-	border: 1px solid #8444df;
-}
-.drpdn:hover{
-	background-color: #8444df;
-	color: white;
-}
-.dropdown-menu{
-	width: 100%;
-}
